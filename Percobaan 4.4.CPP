@@ -1,0 +1,38 @@
+#include<iostream>
+#include<conio.h>
+int main() {
+int i, j, m, n, matriks1[10][10], matriks2[10][10], hasil[10][10];
+  cout << "Zulkipli\n";
+  cout << "F1B019149\n";
+  cout << "===================\n";
+  cout << "Pengurangan Matriks\n";
+  cout << "Masukkan jumlah baris matriks: ";
+  cin >> m;
+  cout << "Masukkan jumlah kolom matriks: ";
+  cin >> n;
+  cout << "------------------------------------\n";
+  cout << "Masukkan elemen matriks pertama: \n";
+  for(i = 0; i < m; i++){
+for(j = 0; j < n; j++){
+      cin >> matriks1[i][j];
+    }
+  }
+  cout << "-----------------------------------";
+  cout << "\nMasukkan elemen matriks kedua: \n";
+  for(i = 0; i < m; i++){
+    for(j = 0; j < n; j++){
+      cin >> matriks2[i][j];
+    }
+  }
+  cout << "-----------------------------------";
+  cout << "\nHasil pengurangan matriks: \n";
+  for(i = 0; i < m; i++){
+    for(j = 0; j < n; j++){
+      hasil[i][j] = matriks1[i][j] - matriks2[i][j];
+cout << hasil[i][j] << "\t";
+    }
+    cout << endl;
+  }
+   getch ();
+  return 0;
+}
